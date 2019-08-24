@@ -58,7 +58,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "fermo:build"
+            "browserTarget": "fermo:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
@@ -84,9 +85,38 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/theme/css/font-face.css",
+              "src/assets/theme/vendor/font-awesome-5/css/fontawesome-all.min.css",
+              "src/assets/theme/vendor/mdi-font/css/material-design-iconic-font.min.css",
+              "src/assets/theme/vendor/bootstrap-4.1/bootstrap.min.css",
+              "src/assets/theme/vendor/animsition/animsition.min.css",
+              "src/assets/theme/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css",
+              "src/assets/theme/vendor/wow/animate.css",
+              "src/assets/theme/vendor/css-hamburgers/hamburgers.min.css",
+              "src/assets/theme/vendor/slick/slick.css",
+              "src/assets/theme/vendor/select2/select2.min.css",
+              "src/assets/theme/vendor/perfect-scrollbar/perfect-scrollbar.css",
+              "src/assets/theme/css/theme.css",
               "src/styles.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "assets/theme/vendor/jquery-3.2.1.min.js",
+              "assets/theme/vendor/bootstrap-4.1/popper.min.js",
+              "assets/theme/vendor/bootstrap-4.1/bootstrap.min.js",
+              "assets/theme/vendor/slick/slick.min.js",
+              "assets/theme/vendor/wow/wow.min.js",
+              "assets/theme/vendor/animsition/animsition.min.js",
+              "assets/theme/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js",
+              "assets/theme/vendor/counter-up/jquery.waypoints.min.js",
+              "assets/theme/vendor/counter-up/jquery.counterup.min.js",
+              "assets/theme/vendor/circle-progress/circle-progress.min.js",
+              "assets/theme/vendor/perfect-scrollbar/perfect-scrollbar.js",
+              "assets/theme/vendor/chartjs/Chart.bundle.min.js",
+              "assets/theme/vendor/select2/select2.min.js",
+              "assets/theme/vendor/jquery-ui.min.js",
+              "assets/theme/js/main.js"
+            ]
           }
         },
         "lint": {

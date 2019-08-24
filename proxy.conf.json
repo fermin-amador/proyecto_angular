@@ -1,0 +1,14 @@
+{
+    "/api":{
+        "target":"https://localhost/api_fermo/",
+        "secure": false,
+        "pathRewrite":{
+          "^/api": ""
+        }
+        
+        
+
+    }
+
+
+}
